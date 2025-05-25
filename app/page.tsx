@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Achievements from "@/components/achievements";
 import Footer from "@/components/Footer";
 import { links } from "@/lib/links";
+import Tooltip from "@/components/Tooltip";
 
 export default function Portfolio() {
   return (
@@ -16,7 +17,7 @@ export default function Portfolio() {
       {/* Header */}
       <header className="flex justify-between items-center p-4 text-xs text-zinc-400"></header>
 
-      <div className="max-w-2xl mx-auto px-4 pb-8">
+      <div className="max-w-3xl mx-auto px-4 pb-8">
         {/* Profile Section */}
         <div className="flex gap-4 mb-8">
           <div className="relative w-[140px] h-[140px] flex-shrink-0 overflow-hidden rounded-lg">
@@ -35,49 +36,61 @@ export default function Portfolio() {
             </div>
             <p className="text-zinc-400 text-lg mb-3">Student</p>
             <div className="flex gap-2">
-              <a href={links.github} target="_blank" rel="noopener noreferrer">
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-800"
+              <Tooltip content="GitHub">
+                <a
+                  href={links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Github className="h-3 w-3" />
-                </Button>
-              </a>
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-900 hover:text-100"
+                  >
+                    <Github className="h-3 w-3" />
+                  </Button>
+                </a>
+              </Tooltip>
 
-              <a href={links.x} target="_blank" rel="noopener noreferrer">
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-800"
-                >
-                  <SiX className="h-3 w-3" />
-                </Button>
-              </a>
+              <Tooltip content="X (Twitter)">
+                <a href={links.x} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-900 hover:text-100"
+                  >
+                    <SiX className="h-3 w-3" />
+                  </Button>
+                </a>
+              </Tooltip>
 
-              <a
-                href={links.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-800"
+              <Tooltip content="LinkedIn">
+                <a
+                  href={links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Linkedin className="h-3 w-3" />
-                </Button>
-              </a>
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-900 hover:text-100"
+                  >
+                    <Linkedin className="h-3 w-3" />
+                  </Button>
+                </a>
+              </Tooltip>
 
-              <a href={links.email}>
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-800"
-                >
-                  <Mail className="h-3 w-3" />
-                </Button>
-              </a>
+              <Tooltip content="Email">
+                <a href={links.email}>
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    className="h-8 w-8 bg-zinc-900 border-zinc-700 hover:bg-zinc-900 hover:text-100"
+                  >
+                    <Mail className="h-3 w-3" />
+                  </Button>
+                </a>
+              </Tooltip>
             </div>
           </div>
         </div>
@@ -85,7 +98,7 @@ export default function Portfolio() {
         {/* About Me Section */}
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 text-zinc-100">About Me.</h2>
-          <div className="space-y-3 text-zinc-300 text-sm leading-relaxed">
+          <div className="space-y-3 text-zinc-300 text-md leading-relaxed ">
             <p>
               Hey! I&apos;m Ojasvi Doye, third year computer science student and
               full-stack developer who loves turning ideas into real, working
@@ -109,7 +122,7 @@ export default function Portfolio() {
         {/* Hire Me Section */}
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 text-zinc-100">Hire Me.</h2>
-          <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
+          <p className="text-zinc-300 text-md mb-4 leading-relaxed">
             I&apos;m currently available for internships, full-time
             opportunities, and freelance projects. If you&apos;re looking for
             someone passionate, skilled, and ready to contribute, I&apos;m here
@@ -137,12 +150,13 @@ export default function Portfolio() {
           <Projects />
         </section>
         <Achievements />
+
         {/* Reach out to me Section */}
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 text-zinc-100">
             Reach out to me.
           </h2>
-          <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
+          <p className="text-zinc-300 text-md mb-4 leading-relaxed">
             Feel free to reach out to me via email for any queries,
             collaboration opportunities, or further details. I&apos;m also
             active on X and LinkedIn, so feel free to DM me there :)

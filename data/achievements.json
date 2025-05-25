@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Winner",
+    "event": "PULSE GenAI Hackathon",
+    "organization": "Aditya Birla Group & OAB, at IIT Bombay Techfest",
+    "detail": "selected from 400+ teams",
+    "icon": "Trophy",
+    "rank": "1st",
+    "color": "text-indigo-100"
+  },
+  {
+    "title": "Domain Winner",
+    "event": "BBB Hackathon",
+    "organization": "SPIT, Mumbai",
+    "detail": "SaaS Track",
+    "icon": "Award",
+    "rank": "Winner",
+    "color": "text-indigo-200"
+  },
+  {
+    "title": "Top 10 Finalist",
+    "event": "ISTD Hackathon",
+    "organization": "by Let's Upgrade",
+    "detail": "",
+    "icon": "Star",
+    "rank": "Top 10",
+    "color": "text-indigo-300"
+  },
+  {
+    "title": "Top 25 Finalist",
+    "event": "48-hour Hackathon",
+    "organization": "BITS Pilani",
+    "detail": "",
+    "icon": "Star",
+    "rank": "Top 25",
+    "color": "text-indigo-400"
+  }
+]

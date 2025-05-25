@@ -1,53 +1,13 @@
 "use client";
-import { Trophy, Award, Star, Flame } from "lucide-react";
 
-const achievements = [
-  {
-    title: "Winner",
-    event: "PULSE GenAI Hackathon",
-    organization: "Aditya Birla Group & OAB, at IIT Bombay Techfest",
-    detail: "selected from 400+ teams",
-    icon: Trophy,
-    rank: "1st",
-    color: "text-indigo-100",
-  },
-  {
-    title: "Domain Winner",
-    event: "BBB Hackathon",
-    organization: "SPIT, Mumbai",
-    detail: "SaaS Track",
-    icon: Award,
-    rank: "Winner",
-    color: "text-indigo-200",
-  },
-  {
-    title: "Top 10 Finalist",
-    event: "ISTD Hackathon",
-    organization: "by Let's Upgrade",
-    detail: "",
-    icon: Star,
-    rank: "Top 10",
-    color: "text-indigo-300",
-  },
-  {
-    title: "Top 25 Finalist",
-    event: "48-hour Hackathon",
-    organization: "BITS Pilani",
-    detail: "",
-    icon: Star,
-    rank: "Top 25",
-    color: "text-indigo-400",
-    },
-  // {
-  //   title: "Completed",
-  //   event: "100 Days of Code Challenge",
-  //   organization: "on X",
-  //   detail: "#100DaysOfCode",
-  //   icon: Flame,
-  //   rank: "",
-  //   color: "text-indigo-500",
-  // },
-];
+import { Trophy, Award, Star } from "lucide-react";
+import achievements from "@/data/achievements.json";
+
+const icons = {
+  Trophy,
+  Award,
+  Star,
+};
 
 export function Achievements() {
   return (
@@ -55,19 +15,20 @@ export function Achievements() {
       <h2 className="text-lg font-bold mb-3 text-zinc-100">Achievements.</h2>
       <div className="space-y-2">
         {achievements.map((achievement, index) => {
-          const IconComponent = achievement.icon;
+          const IconComponent = icons[achievement.icon as keyof typeof icons];
+
           return (
             <div
               key={index}
               className="group flex items-start gap-3 p-2 rounded-md hover:bg-zinc-900/50 transition-all duration-200"
             >
               <div className="flex-shrink-0 pt-1">
-                <IconComponent className={`h-4 w-4 ${achievement.color}`} />
+                <IconComponent className={`h-5 w-5 ${achievement.color}`} />
               </div>
 
               <div className="flex-1 min-w-0 space-y-0.5">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="font-medium text-zinc-100 text-sm">
+                  <span className="font-medium text-zinc-100 text-lg">
                     {achievement.title}
                   </span>
                   <span className="text-zinc-400 text-sm">•</span>
