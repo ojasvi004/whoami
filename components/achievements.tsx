@@ -61,14 +61,11 @@ export function Achievements() {
               key={index}
               className="group flex items-start gap-3 p-2 rounded-md hover:bg-zinc-900/50 transition-all duration-200"
             >
-              {/* Icon */}
               <div className="flex-shrink-0 pt-1">
                 <IconComponent className={`h-4 w-4 ${achievement.color}`} />
               </div>
 
-              {/* Content */}
               <div className="flex-1 min-w-0 space-y-0.5">
-                {/* First line: title • event • detail (optional) + rank */}
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="font-medium text-zinc-100 text-sm">
                     {achievement.title}
@@ -85,8 +82,6 @@ export function Achievements() {
                     {achievement.rank}
                   </span>
                 </div>
-
-                {/* Second line: organization */}
                 <div className="text-zinc-400 text-xs">{achievement.organization}</div>
               </div>
             </div>

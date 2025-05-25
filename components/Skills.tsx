@@ -9,7 +9,7 @@ export function Skills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="relative group flex items-center gap-2 bg-zinc-300/95 text-xs px-2 py-2 rounded-full hover:bg-zinc-200/95 transition-all duration-200 hover:scale-105 cursor-pointer"
+            className="relative group flex items-center gap-2 bg-zinc-300/95 text-xs px-2 py-2 rounded-md hover:bg-zinc-200/95 transition-all duration-200 hover:scale-105 cursor-pointer"
           >
             <Image
               src={skill.logo || "/placeholder.svg"}

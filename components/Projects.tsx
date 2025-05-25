@@ -10,7 +10,7 @@ import { useState } from "react";
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
-  
+
   return (
     <div>
       <h2 className="text-lg font-bold mb-4 text-zinc-100">Projects.</h2>
@@ -19,15 +19,16 @@ export function Projects() {
           <Card key={index} className="bg-zinc-900 border-zinc-800">
             <CardContent className="p-4">
               <div className="flex gap-3">
-                <div className="flex-shrink-0">
+                <div className="w-[120px] h-[120px] overflow-hidden rounded">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={120}
                     height={80}
-                    className="rounded object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
+
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-sm font-semibold text-zinc-100">
@@ -67,7 +68,7 @@ export function Projects() {
           </Card>
         ))}
       </div>
-      
+
       {projects.length > 2 && (
         <div className="text-center mt-4">
           <Button
