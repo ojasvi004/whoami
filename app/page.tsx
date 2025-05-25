@@ -14,28 +14,26 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-mono">
       {/* Header */}
-      <header className="flex justify-between items-center p-4 text-xs text-zinc-400">
-      </header>
+      <header className="flex justify-between items-center p-4 text-xs text-zinc-400"></header>
 
       <div className="max-w-2xl mx-auto px-4 pb-8">
         {/* Profile Section */}
         <div className="flex gap-4 mb-8">
-          <div className="flex-shrink-0">
+          <div className="relative w-[140px] h-[140px] flex-shrink-0 overflow-hidden rounded-lg">
             <Image
-              src="/placeholder.svg?height=120&width=120"
+              src="/lain2.gif"
               alt="Ojasvi Doye"
-              width={120}
-              height={120}
-              className="rounded-lg object-cover"
+              fill
+              className="object-cover scale-[2] transition-transform duration-300"
             />
           </div>
 
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-2xl font-bold text-zinc-100">Ojasvi Doye</h1>
+              <h1 className="text-4xl font-bold text-zinc-100">Ojasvi Doye</h1>
               <BadgeComponent prop="Available" />
             </div>
-            <p className="text-zinc-400 text-sm mb-3">Student</p>
+            <p className="text-zinc-400 text-lg mb-3">Student</p>
             <div className="flex gap-2">
               <a href={links.github} target="_blank" rel="noopener noreferrer">
                 <Button
@@ -94,9 +92,9 @@ export default function Portfolio() {
               products.
             </p>
             <p>
-              I&apos;m flexible working with any tech stack, though I prefer modern
-              tools. I&apos;m currently working with Next.js, Django, Express, and
-              TypeScript.
+              I&apos;m flexible working with any tech stack, though I prefer
+              modern tools. I&apos;m currently working with Next.js, Django,
+              Express, and TypeScript.
             </p>
             <p>
               I love contributing to open-source projects and have actively
@@ -112,10 +110,10 @@ export default function Portfolio() {
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 text-zinc-100">Hire Me.</h2>
           <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
-            I&apos;m currently available for internships, full-time opportunities,
-            and freelance projects. If you&apos;re looking for someone passionate,
-            skilled, and ready to contribute, I&apos;m here to help bring your ideas
-            to life!
+            I&apos;m currently available for internships, full-time
+            opportunities, and freelance projects. If you&apos;re looking for
+            someone passionate, skilled, and ready to contribute, I&apos;m here
+            to help bring your ideas to life!
           </p>
           <a
             href="mailto:ojasvidoye@gmail.com?subject=Interested%20in%20hiring%20you"
@@ -146,8 +144,8 @@ export default function Portfolio() {
           </h2>
           <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
             Feel free to reach out to me via email for any queries,
-            collaboration opportunities, or further details. I&apos;m also active on
-            X and LinkedIn, so feel free to DM me there :)
+            collaboration opportunities, or further details. I&apos;m also
+            active on X and LinkedIn, so feel free to DM me there :)
           </p>
         </section>
       </div>
