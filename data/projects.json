@@ -1,0 +1,26 @@
+[
+  {
+    "title": "E-Commerce Platform",
+    "status": "running",
+    "image": "/placeholder.svg?height=80&width=120",
+    "description": "A full-stack e-commerce platform built with Next.js and TypeScript. Features include user authentication, product management, shopping cart, payment integration, and admin dashboard. Implemented with modern design patterns and optimized for performance."
+  },
+  {
+    "title": "Task Management App",
+    "status": "running",
+    "image": "/placeholder.svg?height=80&width=120",
+    "description": "A collaborative task management application designed for teams. Built with React and Node.js, featuring real-time updates, drag-and-drop functionality, team collaboration tools, and progress tracking with an intuitive user interface."
+  },
+  {
+    "title": "Task Management App",
+    "status": "running",
+    "image": "/placeholder.svg?height=80&width=120",
+    "description": "A collaborative task management application designed for teams. Built with React and Node.js, featuring real-time updates, drag-and-drop functionality, team collaboration tools, and progress tracking with an intuitive user interface."
+  },
+  {
+    "title": "Task Management App",
+    "status": "running",
+    "image": "/placeholder.svg?height=80&width=120",
+    "description": "A collaborative task management application designed for teams. Built with React and Node.js, featuring real-time updates, drag-and-drop functionality, team collaboration tools, and progress tracking with an intuitive user interface."
+  }
+]

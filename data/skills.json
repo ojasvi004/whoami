@@ -1,0 +1,15 @@
+[
+  { "name": "ReactJS", "logo": "/logos/react.svg" },
+  { "name": "NextJS", "logo": "/logos/nextdotjs.svg" },
+  { "name": "Django", "logo": "/logos/django.svg" },
+  { "name": "TypeScript", "logo": "/logos/typescript.svg" },
+  { "name": "Python", "logo": "/logos/python.svg" },
+  { "name": "Tailwind CSS", "logo": "/logos/tailwindcss.svg" },
+  { "name": "NodeJS", "logo": "/logos/nodedotjs.svg" },
+  { "name": "ExpressJS", "logo": "/logos/express.svg" },
+  { "name": "PostgreSQL", "logo": "/logos/postgresql.svg" },
+  { "name": "MongoDB", "logo": "/logos/mongodb.svg" },
+  { "name": "Redis", "logo": "/logos/redis.svg" },
+  { "name": "Prisma", "logo": "/logos/prisma.svg" },
+  { "name": "Git", "logo": "/logos/git.svg" }
+]
