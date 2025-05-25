@@ -42,7 +42,7 @@ const achievements = [
     title: "Completed",
     event: "100 Days of Code Challenge",
     organization: "on X",
-    detail: "",
+    detail: "#100DaysOfCode",
     icon: Flame,
     rank: "",
     color: "text-indigo-500",
