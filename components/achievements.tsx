@@ -38,15 +38,15 @@ const achievements = [
     rank: "Top 25",
     color: "text-indigo-400",
     },
-  {
-    title: "Completed",
-    event: "100 Days of Code Challenge",
-    organization: "on X",
-    detail: "#100DaysOfCode",
-    icon: Flame,
-    rank: "",
-    color: "text-indigo-500",
-  },
+  // {
+  //   title: "Completed",
+  //   event: "100 Days of Code Challenge",
+  //   organization: "on X",
+  //   detail: "#100DaysOfCode",
+  //   icon: Flame,
+  //   rank: "",
+  //   color: "text-indigo-500",
+  // },
 ];
 
 export function Achievements() {

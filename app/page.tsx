@@ -15,7 +15,6 @@ export default function Portfolio() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-mono">
       {/* Header */}
       <header className="flex justify-between items-center p-4 text-xs text-zinc-400">
-        <div>Star on GitHub</div>
       </header>
 
       <div className="max-w-2xl mx-auto px-4 pb-8">
