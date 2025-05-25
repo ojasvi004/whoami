@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Ojasvi Doye',
+  description: 'Personal portfolio',
+  generator: 'Next.js',
+    icons: {
+    icon: '/favicon.png', 
+  },
 }
 
 export default function RootLayout({
@@ -14,6 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <title>Ojasvi Doye</title>
+        <meta name="description" content="Personal portfolio" />
+      </Head>
       <body>{children}</body>
     </html>
   )

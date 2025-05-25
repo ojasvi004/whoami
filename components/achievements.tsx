@@ -1,5 +1,5 @@
 "use client";
-import { Trophy, Award, Medal, Star, Flame } from "lucide-react";
+import { Trophy, Award, Star, Flame } from "lucide-react";
 
 const achievements = [
   {

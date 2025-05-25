@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { SiX } from "react-icons/si";
 
 import { BadgeComponent } from "@/components/Badge";
@@ -90,13 +90,13 @@ export default function Portfolio() {
           <h2 className="text-lg font-bold mb-3 text-zinc-100">About Me.</h2>
           <div className="space-y-3 text-zinc-300 text-sm leading-relaxed">
             <p>
-              Hey! I'm Ojasvi Doye, third year computer science student and
+              Hey! I&apos;m Ojasvi Doye, third year computer science student and
               full-stack developer who loves turning ideas into real, working
               products.
             </p>
             <p>
-              I'm flexible working with any tech stack, though I prefer modern
-              tools. I'm currently working with Next.js, Django, Express, and
+              I&apos;m flexible working with any tech stack, though I prefer modern
+              tools. I&apos;m currently working with Next.js, Django, Express, and
               TypeScript.
             </p>
             <p>
@@ -113,9 +113,9 @@ export default function Portfolio() {
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-3 text-zinc-100">Hire Me.</h2>
           <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
-            I'm currently available for internships, full-time opportunities,
-            and freelance projects. If you're looking for someone passionate,
-            skilled, and ready to contribute, I'm here to help bring your ideas
+            I&apos;m currently available for internships, full-time opportunities,
+            and freelance projects. If you&apos;re looking for someone passionate,
+            skilled, and ready to contribute, I&apos;m here to help bring your ideas
             to life!
           </p>
           <a
@@ -147,7 +147,7 @@ export default function Portfolio() {
           </h2>
           <p className="text-zinc-300 text-sm mb-4 leading-relaxed">
             Feel free to reach out to me via email for any queries,
-            collaboration opportunities, or further details. I'm also active on
+            collaboration opportunities, or further details. I&apos;m also active on
             X and LinkedIn, so feel free to DM me there :)
           </p>
         </section>

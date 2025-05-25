@@ -59,7 +59,7 @@ export function Projects() {
                             <Eye className="h-3 w-3" />
                           </Button>
                         </DialogTrigger>
-                        <DialogContent className="max-w-3xl w-full p-6">
+                        <DialogContent className="max-w-3xl w-full p-6 bg-zinc-900/30 border-none">
                           <Carousel>
                             <CarouselContent>
                               {projects[index].screenshots?.map(

@@ -4,12 +4,13 @@
     "status": "running",
     "image": "/roon-logo.png?height=80&width=120",
     "description": "A real-time messaging app built with TypeScript, Next.js, MongoDB, Pusher, and Docker. Features include instant chat updates, group chats, and secure authentication using NextAuth. Integrated MongoDB and Mongoose for efficient data handling and Pusher for live updates.",
-    "live": "#",
-    "github": "#",
+    "live": "https://roon-chat.vercel.app/",
+    "github": "https://github.com/ojasvi004/Roon",
     "screenshots": [
-      "/screenshots/roon-1.png",
-      "/screenshots/roon-2.png",
-      "/screenshots/roon-3.png"
+      "/roon/roon-1.png",
+      "/roon/roon-2.png",
+      "/roon/roon-3.png",
+      "/roon/roon-4.png"
     ]
   },
   {
