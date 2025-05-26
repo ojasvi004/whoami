@@ -11,6 +11,13 @@
       "/roon/roon-2.png",
       "/roon/roon-3.png",
       "/roon/roon-4.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS"
     ]
   },
   {
@@ -24,6 +31,13 @@
       "/screenshots/legalai-1.png",
       "/screenshots/legalai-2.png",
       "/screenshots/legalai-3.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS"
     ]
   },
   {
@@ -37,6 +51,13 @@
       "/screenshots/discountly-1.png",
       "/screenshots/discountly-2.png",
       "/screenshots/discountly-3.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS"
     ]
   }
 ]

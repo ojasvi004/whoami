@@ -1,6 +1,7 @@
-import type { Metadata } from 'next'
-import Head from 'next/head'
-import './globals.css'
+import type React from "react";
+import type { Metadata } from "next";
+import "./globals.css";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: 'Ojasvi Doye',
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -23,7 +24,7 @@ export default function RootLayout({
         <title>Ojasvi Doye</title>
         <meta name="description" content="Personal portfolio" />
       </Head>
-      <body>{children}</body>
+      <body className="bg-zinc-950">{children}</body>
     </html>
-  )
+  );
 }

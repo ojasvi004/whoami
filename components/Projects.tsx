@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { TechBadge } from "./tech-badge";
 
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -98,6 +99,11 @@ export function Projects() {
                       {project.title}
                     </h3>
                     <BadgeComponent prop={project.status.toLowerCase()} />
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {project.technologies.map((tech, techIndex) => (
+                      <TechBadge key={techIndex} tech={tech} />
+                    ))}
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed">
                     {project.description}
