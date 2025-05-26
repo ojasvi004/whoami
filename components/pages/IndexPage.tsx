@@ -18,14 +18,14 @@ export default function IndexPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-mono relative overflow-hidden">
       {/* Header */}
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.03),transparent_50%)]" />
+  {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.03),transparent_50%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#18181b_1px,transparent_1px),linear-gradient(to_bottom,#18181b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
-
+ */}
       {/* Header */}
       <header className="flex justify-between items-center p-4 text-xs text-zinc-400 relative z-10"></header>
 
 
-      <div className="max-w-4xl mx-auto px-4 pb-8">
+      <div className="max-w-3xl mx-auto px-4 pb-8">
         {/* Profile Section */}
         <AnimatedWrapper delay={0.1}>
           <div className="flex gap-6 mb-12 p-6 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/50 shadow-2xl">

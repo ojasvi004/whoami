@@ -3,7 +3,7 @@
     "title": "Roon",
     "status": "running",
     "image": "/roon/roon-1.png",
-    "description": "A real-time messaging app built with TypeScript, Next.js, MongoDB, Pusher, and Docker. Features include instant chat updates, group chats, and secure authentication using NextAuth. Integrated MongoDB and Mongoose for efficient data handling and Pusher for live updates.",
+    "description": "A real-time messaging app with group chats, instant updates, and secure authentication.",
     "live": "https://roon-chat.vercel.app/",
     "github": "https://github.com/ojasvi004/Roon",
     "screenshots": [
@@ -24,7 +24,7 @@
     "title": "Discountly",
     "status": "running",
     "image": "/discountly/discountly-1.png",
-    "description": "A pricing analytics SaaS platform built with TypeScript, Next.js, PostgreSQL, Drizzle, Neon, Clerk, and Stripe. Enables startups to offer PPP-adjusted pricing and provides insights on revenue optimization, competitor pricing, and automated strategies based on real-time analytics.",
+    "description": "A pricing analytics platform that helps startups offer PPP-based pricing and optimize revenue with real-time insights",
     "live": "#",
     "github": "https://github.com/ojasvi004/Discountly",
     "screenshots": [
@@ -44,7 +44,7 @@
     "title": "Legal AI",
     "status": "running",
     "image": "/legalai/legalai-3.png",
-    "description": "An AI-powered legal tech platform using TypeScript, Python, MongoDB, Redis, Node.js, and Flask. Includes tools for document summarization, transcript querying, multilingual translation, case scheduling, and generation of legal templates like NDAs and contracts.",
+    "description": "An AI-powered legal tech platform offering tools like document summarization, transcript querying, translation, scheduling, and legal template generation.",
     "live": "https://legalai-app.vercel.app",
     "github": "https://github.com/PartTimeHumans/LegalAI-Vite",
     "screenshots": [
