@@ -2,7 +2,7 @@
   {
     "title": "Roon",
     "status": "running",
-    "image": "/roon-logo.png?height=80&width=120",
+    "image": "/roon/roon-1.png",
     "description": "A real-time messaging app built with TypeScript, Next.js, MongoDB, Pusher, and Docker. Features include instant chat updates, group chats, and secure authentication using NextAuth. Integrated MongoDB and Mongoose for efficient data handling and Pusher for live updates.",
     "live": "https://roon-chat.vercel.app/",
     "github": "https://github.com/ojasvi004/Roon",
@@ -21,16 +21,16 @@
     ]
   },
   {
-    "title": "Legal AI",
+    "title": "Discountly",
     "status": "running",
-    "image": "/legal-ai.png?height=&width=120",
-    "description": "An AI-powered legal tech platform using TypeScript, Python, MongoDB, Redis, Node.js, and Flask. Includes tools for document summarization, transcript querying, multilingual translation, case scheduling, and generation of legal templates like NDAs and contracts.",
+    "image": "/discountly/discountly-1.png",
+    "description": "A pricing analytics SaaS platform built with TypeScript, Next.js, PostgreSQL, Drizzle, Neon, Clerk, and Stripe. Enables startups to offer PPP-adjusted pricing and provides insights on revenue optimization, competitor pricing, and automated strategies based on real-time analytics.",
     "live": "#",
-    "github": "#",
+    "github": "https://github.com/ojasvi004/Discountly",
     "screenshots": [
-      "/screenshots/legalai-1.png",
-      "/screenshots/legalai-2.png",
-      "/screenshots/legalai-3.png"
+      "/discountly/discountly-1.png",
+      "/discountly/discountly-2.png",
+      "/discountly/discountly-3.png"
     ],
     "technologies": [
       "Next.js",
@@ -41,16 +41,17 @@
     ]
   },
   {
-    "title": "Discountly",
+    "title": "Legal AI",
     "status": "running",
-    "image": "/placeholder.svg?height=80&width=120",
-    "description": "A pricing analytics platform built with TypeScript, Next.js, PostgreSQL, Drizzle, Neon, Clerk, and Stripe (Jan 2025). Enables startups to offer PPP-adjusted pricing and provides insights on revenue optimization, competitor pricing, and automated strategies based on real-time analytics.",
-    "live": "#",
-    "github": "#",
+    "image": "/legalai/legalai-3.png",
+    "description": "An AI-powered legal tech platform using TypeScript, Python, MongoDB, Redis, Node.js, and Flask. Includes tools for document summarization, transcript querying, multilingual translation, case scheduling, and generation of legal templates like NDAs and contracts.",
+    "live": "https://legalai-app.vercel.app",
+    "github": "https://github.com/PartTimeHumans/LegalAI-Vite",
     "screenshots": [
-      "/screenshots/discountly-1.png",
-      "/screenshots/discountly-2.png",
-      "/screenshots/discountly-3.png"
+      "/legalai/legalai-1.png",
+      "/legalai/legalai-2.png",
+      "/legalai/legalai-3.png",
+      "/legalai/legalai-4.png"
     ],
     "technologies": [
       "Next.js",

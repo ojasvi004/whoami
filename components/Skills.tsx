@@ -44,11 +44,11 @@ export function Skills() {
             onMouseLeave={() => setHoveredSkill(null)}
           >
             <Tooltip content={skill.name}>
-              <div className="flex items-center justify-center p-3 bg-zinc-900/60 border border-zinc-800/60 rounded-lg hover:bg-zinc-800/60 hover:border-zinc-700/80 transition-all duration-200 cursor-pointer group-hover:scale-105">
+              <div className="flex items-center justify-center p-2 bg-transparent  rounded-lg transition-all duration-200 cursor-pointer group-hover:scale-105">
                 <img
                   src={skill.logo}
                   alt={skill.name}
-                  className="w-6 h-6 invert"
+                  className="w-10 h-10 invert"
                 />
               </div>
             </Tooltip>
