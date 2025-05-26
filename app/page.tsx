@@ -97,7 +97,10 @@ export default function Portfolio() {
 
         {/* About Me Section */}
         <section className="mb-8">
-          <h2 className="text-lg font-bold mb-3 text-zinc-100">About Me.</h2>
+          <div className="flex items-center gap-4">
+            <h2 className="text-2xl font-bold text-zinc-100">About Me</h2>
+            <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
+          </div>{" "}
           <div className="space-y-3 text-zinc-300 text-md leading-relaxed ">
             <p>
               Hey! I&apos;m Ojasvi Doye, third year computer science student and
@@ -141,7 +144,6 @@ export default function Portfolio() {
 
         {/* Skills & Tools Section */}
         <section className="mb-8">
-          <h2 className="mb-4">Skills & Tools.</h2>
           <Skills />
         </section>
 

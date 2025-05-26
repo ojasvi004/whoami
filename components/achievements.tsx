@@ -12,8 +12,10 @@ const icons = {
 export function Achievements() {
   return (
     <section className="mb-8">
-      <h2 className="text-lg font-bold mb-3 text-zinc-100">Achievements.</h2>
-      <div className="space-y-2">
+      <div className="flex items-center gap-4">
+        <h2 className="text-2xl font-bold text-zinc-100">Achievements</h2>
+        <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
+      </div>      <div className="space-y-2">
         {achievements.map((achievement, index) => {
           const IconComponent = icons[achievement.icon as keyof typeof icons];
 
