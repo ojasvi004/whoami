@@ -16,6 +16,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { TechBadge } from "./tech-badge";
+import { ArcadeEmbed } from "./DiscountlyEmbed";
 
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -29,7 +30,6 @@ export function Projects() {
         <h2 className="text-2xl font-bold text-zinc-100">Projects</h2>
         <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
       </div>
-
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
         {displayedProjects.map((project, index) => (
           <Card
@@ -49,13 +49,8 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent" />
 
-                {/* Floating Action Buttons */}
                 <div
-                  className={`absolute top-4 right-4 flex gap-2 transition-all duration-300 ${
-                    hoveredProject === index
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 -translate-y-2"
-                  }`}
+                  className={"absolute top-4 right-4 flex gap-2 transition-all duration-300"}
                 >
                   <Dialog>
                     <DialogTrigger asChild>
@@ -63,7 +58,7 @@ export function Projects() {
                         size="icon"
                         className="h-9 w-9 bg-zinc-900/90 hover:bg-zinc-800/90 border border-zinc-700/50 backdrop-blur-sm shadow-lg"
                       >
-                        <Eye className="h-4 w-4" />
+                        <Eye className="h-5 w-5" />
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl w-full p-8 bg-zinc-900/95 border-zinc-800 backdrop-blur-md">
@@ -72,12 +67,18 @@ export function Projects() {
                           {projects[index].screenshots?.map(
                             (img: string, i: number) => (
                               <CarouselItem key={i}>
-                                <div className="flex items-center justify-center">
-                                  <img
-                                    src={img || "/placeholder.svg"}
-                                    alt={`Screenshot ${i + 1}`}
-                                    className="rounded-xl max-h-[75vh] mx-auto object-contain shadow-2xl"
-                                  />
+                                <div className="flex items-center justify-center w-full">
+                                  {project.title === "Discountly" && i === 0 ? (
+                                    <div className="w-full">
+                                      <ArcadeEmbed />
+                                    </div>
+                                  ) : (
+                                    <img
+                                      src={img || "/placeholder.svg"}
+                                      alt={`Screenshot ${i + 1}`}
+                                      className="rounded-xl max-h-[75vh] mx-auto object-contain shadow-2xl"
+                                    />
+                                  )}
                                 </div>
                               </CarouselItem>
                             )

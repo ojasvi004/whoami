@@ -25,7 +25,7 @@
     "status": "running",
     "image": "/discountly/discountly-1.png",
     "description": "A pricing analytics platform that helps startups offer PPP-based pricing and optimize revenue with real-time insights",
-    "live": "#",
+    "live": "https://discountly-app.vercel.app",
     "github": "https://github.com/ojasvi004/Discountly",
     "screenshots": [
       "/discountly/discountly-1.png",
