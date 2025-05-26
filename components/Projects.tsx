@@ -147,8 +147,7 @@ export function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Play className="h-3.5 w-3.5" />
-                      <span className="text-xs font-medium">Live Demo</span>
+                      <span className="text-md font-medium">Live Demo</span>
                       <ArrowUpRight className="h-3 w-3" />
                     </a>
                   </Button>
