@@ -15,9 +15,10 @@
     "technologies": [
       "Next.js",
       "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "Tailwind CSS"
+      "MongoDB",
+      "Pusher",
+      "Tailwind CSS",
+      "Docker"
     ]
   },
   {
@@ -35,9 +36,11 @@
     "technologies": [
       "Next.js",
       "TypeScript",
-      "Prisma",
       "PostgreSQL",
-      "Tailwind CSS"
+      "Drizzle",
+      "Neon",
+      "Clerk",
+      "Stripe"
     ]
   },
   {
@@ -54,11 +57,13 @@
       "/legalai/legalai-4.png"
     ],
     "technologies": [
+      "Python",
       "Next.js",
       "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "Tailwind CSS"
+      "MongoDB",
+      "Redis",
+      "Node.js",
+      "Flask"
     ]
   }
 ]

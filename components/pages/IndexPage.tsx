@@ -65,7 +65,7 @@ export default function IndexPage() {
                   </a>
                 </Tooltip>
 
-                <Tooltip content="X (Twitter)">
+                <Tooltip content="X">
                   <a href={links.x} target="_blank" rel="noopener noreferrer">
                     <Button
                       size="icon"
