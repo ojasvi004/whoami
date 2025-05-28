@@ -13,7 +13,7 @@ export function Footer() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-6 w-6 text-zinc-400 hover:text-zinc-100"
+              className="h-6 w-6 text-zinc-400 hover:bg-inherit hover:text-zinc-100"
             >
               <Mail className="h-3 w-3" />
             </Button>
@@ -23,7 +23,7 @@ export function Footer() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-6 w-6 text-zinc-400 hover:text-zinc-100"
+              className="h-6 w-6 text-zinc-400 hover:bg-inherit hover:text-zinc-100"
             >
               <Github className="h-3 w-3" />
             </Button>
@@ -33,7 +33,7 @@ export function Footer() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-6 w-6 text-zinc-400 hover:text-zinc-100"
+              className="h-6 w-6 text-zinc-400 hover:bg-inherit hover:text-zinc-100"
             >
               <SiX className="h-3 w-3" />
             </Button>
@@ -43,7 +43,7 @@ export function Footer() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-6 w-6 text-zinc-400 hover:text-zinc-100"
+              className="h-6 w-6 text-zinc-400 hover:bg-inherit hover:text-zinc-100"
             >
               <Linkedin className="h-3 w-3" />
             </Button>

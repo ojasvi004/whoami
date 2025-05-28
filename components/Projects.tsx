@@ -50,7 +50,9 @@ export function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent" />
 
                 <div
-                  className={"absolute top-4 right-4 flex gap-2 transition-all duration-300"}
+                  className={
+                    "absolute top-4 right-4 flex gap-2 transition-all duration-300"
+                  }
                 >
                   <Dialog>
                     <DialogTrigger asChild>
@@ -179,11 +181,11 @@ export function Projects() {
         <div className="flex justify-center pt-6">
           <Button
             variant="outline"
-            className="text-zinc-300 hover:text-zinc-100 bg-zinc-900/50 border-zinc-800/50 hover:bg-zinc-800/50 hover:border-zinc-700/50 px-8 py-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+            className="text-zinc-300 hover:text-zinc-100 bg-zinc-900/50 border-zinc-800/50 hover:bg-zinc-800/50 hover:border-zinc-700/50 px-7 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm"
             onClick={() => setShowAll(!showAll)}
           >
             <span className="text-sm font-medium">
-              {showAll ? "Show Less" : `Show All Projects (${projects.length})`}
+              {showAll ? "Show less" : `Show all projects`}
             </span>
             <span className="ml-3 text-xs transition-transform duration-300">
               {showAll ? "↑" : "↓"}
