@@ -29,7 +29,7 @@ export function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 mb-8">
       <div className="flex items-center gap-4">
         <h2 className="text-2xl font-bold text-zinc-100">Skills & Tools</h2>
         <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />

@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent } from "./ui/card";
-import { Button } from "./ui/button";
-import { BadgeComponent } from "./Badge";
+import { Card, CardContent } from "../ui/card";
+import { Button } from "../ui/button";
+import { BadgeComponent } from "../Badge";
 import Image from "next/image";
 import { Eye, Github, ArrowUpRight, Play } from "lucide-react";
 import projects from "@/data/projects.json";
@@ -15,8 +15,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { TechBadge } from "./tech-badge";
-import { ArcadeEmbed } from "./DiscountlyEmbed";
+import { TechBadge } from "../tech-badge";
+import { ArcadeEmbed } from "../DiscountlyEmbed";
 
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -25,7 +25,7 @@ export function Projects() {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 mb-8">
       <div className="flex items-center gap-4">
         <h2 className="text-2xl font-bold text-zinc-100">Projects</h2>
         <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
