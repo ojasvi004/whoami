@@ -6,7 +6,7 @@ import { links } from "@/lib/links";
 
 export function Footer() {
   return (
-    <footer className="border-t border-zinc-800 py-6">
+    <footer className="border-t border-zinc-800 py-6 max-w-3xl mx-auto">
       <div className="max-w-2xl mx-auto px-4">
         <div className="flex justify-center gap-4 mb-3">
           <a href={links.email}>
