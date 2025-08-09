@@ -39,7 +39,6 @@ export function Projects() {
             onMouseLeave={() => setHoveredProject(null)}
           >
             <CardContent className="p-0">
-              {/* Project Image */}
               <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-zinc-800/50 to-zinc-900/50">
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -94,14 +93,12 @@ export function Projects() {
                 </div>
               </div>
 
-              {/* Project Content */}
               <div className="p-5 space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <h3 className="text-xl font-bold text-zinc-100 group-hover:text-white transition-colors">
                       {project.title}
                     </h3>
-                    <BadgeComponent prop={project.status.toLowerCase()} />
                   </div>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {project.technologies.map((tech, techIndex) => (
@@ -113,7 +110,6 @@ export function Projects() {
                   </p>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex items-center gap-3 pt-2">
                   <Dialog>
                     <DialogContent className="max-w-5xl w-full p-8 bg-zinc-900/95 border-zinc-800 backdrop-blur-md">

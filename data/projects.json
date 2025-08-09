@@ -1,7 +1,6 @@
 [
   {
     "title": "Roon",
-    "status": "running",
     "image": "/roon/roon-1.png",
     "description": "A real-time messaging app with group chats, instant updates, and secure authentication.",
     "live": "https://roon-chat.vercel.app/",
@@ -24,7 +23,6 @@
   },
   {
     "title": "Discountly",
-    "status": "running",
     "image": "/discountly/discountly-1.png",
     "description": "A pricing analytics platform that helps startups offer PPP-based pricing and optimize revenue with real-time insights",
     "live": "https://discountly-app.vercel.app",
@@ -46,7 +44,6 @@
   },
   {
     "title": "Legal AI",
-    "status": "running",
     "image": "/legalai/legalai-3.png",
     "description": "An AI-powered legal tech platform offering tools like document summarization, transcript querying, translation, scheduling, and legal template generation.",
     "live": "https://legalai-app.vercel.app",

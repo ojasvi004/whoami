@@ -7,45 +7,64 @@ import Footer from "@/components/pageComponents/Footer";
 import AnimatedWrapper from "@/components/animated-wrapper";
 import AboutMe from "../pageComponents/AboutMe";
 import HireMe from "../pageComponents/HireMe";
-import ProfileSection from "../pageComponents/ProfileSection";
 import ReachOut from "../pageComponents/ReachOut";
+import Hero from "../pageComponents/Hero";
+import GithubHeatmap from "../pageComponents/GithubHeatmap";
 
 export default function IndexPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 font-mono relative overflow-hidden">
-      <header className="flex justify-between items-center p-4 text-xs text-zinc-400 relative z-10"></header>
-
-      <div className="max-w-3xl mx-auto px-3 sm:px-4 pb-8">
-        <AnimatedWrapper delay={0.1}>
-          <ProfileSection />
+    <div className="min-h-screen bg-retro text-zinc-100 relative">
+      {/* Main */}
+      <div className="relative z-10 mx-auto max-w-7xl px-3 sm:px-6 pb-12">
+        <AnimatedWrapper delay={0.05}>
+          <Hero />
         </AnimatedWrapper>
 
-        <AnimatedWrapper delay={0.2}>
-          <AboutMe />
-        </AnimatedWrapper>
+        <section id="about" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.15}>
+            <AboutMe />
+          </AnimatedWrapper>
+        </section>
 
-        <AnimatedWrapper delay={0.3}>
-          <HireMe />
-        </AnimatedWrapper>
+        {/* GitHub Heatmap */}
+        <section id="github" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.18}>
+            <GithubHeatmap />
+          </AnimatedWrapper>
+        </section>
 
-        <AnimatedWrapper delay={0.4}>
-          <Skills />
-        </AnimatedWrapper>
+        <section id="hire" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.2}>
+            <HireMe />
+          </AnimatedWrapper>
+        </section>
 
-        <AnimatedWrapper delay={0.5}>
-          <Projects />
-        </AnimatedWrapper>
+        <section id="skills" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.25}>
+            <Skills />
+          </AnimatedWrapper>
+        </section>
 
-        <AnimatedWrapper delay={0.6}>
-          <Achievements />
-        </AnimatedWrapper>
+        <section id="projects" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.3}>
+            <Projects />
+          </AnimatedWrapper>
+        </section>
 
-        <AnimatedWrapper delay={0.7}>
-          <ReachOut />
-        </AnimatedWrapper>
+        <section id="achievements" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.35}>
+            <Achievements />
+          </AnimatedWrapper>
+        </section>
+
+        <section id="contact" className="scroll-mt-20">
+          <AnimatedWrapper delay={0.4}>
+            <ReachOut />
+          </AnimatedWrapper>
+        </section>
       </div>
 
-      <AnimatedWrapper delay={0.8}>
+      <AnimatedWrapper delay={0.45}>
         <Footer />
       </AnimatedWrapper>
     </div>

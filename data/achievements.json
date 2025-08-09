@@ -6,7 +6,7 @@
     "detail": "selected from 400+ teams",
     "icon": "Trophy",
     "rank": "1st",
-    "color": "text-indigo-100"
+    "color": "text-violet-100"
   },
   {
     "title": "Domain Winner",
@@ -15,7 +15,7 @@
     "detail": "SaaS Track",
     "icon": "Award",
     "rank": "Winner",
-    "color": "text-indigo-200"
+    "color": "text-violet-200"
   },
   {
     "title": "Top 10 Finalist",
@@ -24,7 +24,7 @@
     "detail": "",
     "icon": "Star",
     "rank": "Top 10",
-    "color": "text-indigo-300"
+    "color": "text-violet-300"
   },
   {
     "title": "Top 25 Finalist",
@@ -33,6 +33,6 @@
     "detail": "",
     "icon": "Star",
     "rank": "Top 25",
-    "color": "text-indigo-400"
+    "color": "text-violet-400"
   }
 ]
