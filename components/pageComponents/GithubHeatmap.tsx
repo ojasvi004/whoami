@@ -4,6 +4,7 @@ import React from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 import clsx from "clsx";
+import { BlueprintSection } from "../BlueprintOverlay";
 
 type Value = { date: string | Date; count?: number };
 
@@ -31,17 +32,18 @@ export default function GithubHeatmap() {
   startDate.setDate(startDate.getDate() - 371);
 
   return (
-    <section className="mb-10">
-      <div className="flex items-center gap-4 mb-4">
-
-        <div className="h-px bg-gradient-to-r from-violet-700/40 via-zinc-800 to-transparent flex-1" />
-      </div>
-
-      <div className="rounded-2xl ring-1 ring-white/10 bg-zinc-900/60 p-4 sm:p-6 backdrop-blur shadow-lg">
-        <div className="overflow-x-auto">
+    <BlueprintSection label="GitHub" headingClassName="text-violet-300">
+      <div className="relative overflow-hidden rounded-md border border-dashed border-white/15 bg-zinc-950/40 px-4 py-5 sm:px-6 sm:py-7 backdrop-blur">
+        {/* hatch accent bands */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-0 [mask-image:radial-gradient(circle_at_55%_45%,white,transparent_80%)]">
+          <div className="absolute inset-x-0 top-0 h-5 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.14)_0,rgba(255,255,255,0.14)_1px,transparent_1px,transparent_10px)] opacity-30" />
+          <div className="absolute inset-x-0 bottom-0 h-5 bg-[repeating-linear-gradient(-45deg,rgba(255,255,255,0.14)_0,rgba(255,255,255,0.14)_1px,transparent_1px,transparent_10px)] opacity-25" />
+        </div>
+        <div className="overflow-x-auto relative z-10 flex justify-center">
           <div
             className={clsx(
-              "mx-auto min-w-[720px] transition-opacity duration-500",
+              // further enlarged footprint
+              "w-full max-w-[980px] lg:max-w-[1040px] transition-opacity duration-500 px-1",
               loading ? "opacity-0" : "opacity-100"
             )}
           >
@@ -70,9 +72,8 @@ export default function GithubHeatmap() {
             />
           </div>
         </div>
-
         <p className="mt-3 text-xs text-zinc-400 text-center">
-          Data from GitHub •{" "}
+          Data from GitHub • {""}
           <a
             className="underline hover:text-violet-300 transition-colors"
             href={`https://github.com/${username}`}
@@ -85,26 +86,14 @@ export default function GithubHeatmap() {
       </div>
 
       <style jsx global>{`
-        .react-calendar-heatmap .violet-level-0 {
-          fill: #27272a;
-        }
-        .react-calendar-heatmap .violet-level-1 {
-          fill: #312e81;
-        }
-        .react-calendar-heatmap .violet-level-2 {
-          fill: #3730a3;
-        }
-        .react-calendar-heatmap .violet-level-3 {
-          fill: #4338ca;
-        }
-        .react-calendar-heatmap .violet-level-4 {
-          fill: #6366f1;
-        }
-        .react-calendar-heatmap .react-calendar-heatmap-day:hover {
-          stroke: #c7d2fe;
-          stroke-width: 1px;
-        }
+        .react-calendar-heatmap .violet-level-0 { fill: #27272a; }
+        .react-calendar-heatmap .violet-level-1 { fill: #312e81; }
+        .react-calendar-heatmap .violet-level-2 { fill: #3730a3; }
+        .react-calendar-heatmap .violet-level-3 { fill: #4338ca; }
+        .react-calendar-heatmap .violet-level-4 { fill: #6366f1; }
+        .react-calendar-heatmap .react-calendar-heatmap-day { width: 13px; height: 13px; rx: 2px; ry: 2px; }
+        .react-calendar-heatmap .react-calendar-heatmap-day:hover { stroke: #c7d2fe; stroke-width: 1px; }
       `}</style>
-    </section>
+    </BlueprintSection>
   );
 }

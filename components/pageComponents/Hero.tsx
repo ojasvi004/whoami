@@ -184,10 +184,7 @@ export default function Hero() {
                             <img
                               src={src}
                               alt="tech"
-                              className="h-11 w-11 md:h-12 md:w-12 rounded-full bg-white p-2 
-             border border-white/40 shadow-sm invert brightness-110 
-             contrast-125 ring-1 ring-white hover:ring-violet-300/40 
-             transition"
+                              className="h-11 w-11 md:h-12 md:w-12 rounded-full bg-white p-2 border border-white/30 shadow-sm invert brightness-110 contrast-125 ring-2 ring-black/70 transition"
                             />
                             <span className="pointer-events-none absolute -inset-0.5 rounded-full opacity-0 hover:opacity-100 bg-[radial-gradient(circle_at_50%_45%,rgba(167,139,250,0.35),transparent_60%)] mix-blend-screen transition-opacity" />
                             <span className="pointer-events-none absolute -inset-[3px] rounded-full border border-dashed border-white/15 opacity-60 group-hover:opacity-80 transition-opacity" />

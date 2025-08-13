@@ -33,12 +33,6 @@ export default function IndexPage() {
           </AnimatedWrapper>
         </section>
 
-        <section id="hire" className="scroll-mt-20">
-          <AnimatedWrapper delay={0.2}>
-            <HireMe />
-          </AnimatedWrapper>
-        </section>
-
         <section id="skills" className="scroll-mt-20">
           <AnimatedWrapper delay={0.25}>
             <Skills />
