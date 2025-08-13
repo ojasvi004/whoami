@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/carousel";
 import { TechBadge } from "../tech-badge";
 import { ArcadeEmbed } from "../DiscountlyEmbed";
+import { ProjectsBlueprintOverlay, CardBlueprintOverlay } from "../BlueprintOverlay";
 
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -25,19 +26,20 @@ export function Projects() {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <section className="space-y-8 mb-8">
-      <div className="flex items-center gap-4">
-        <h2 className="text-2xl font-bold text-zinc-100">Projects</h2>
-        <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
-      </div>
-      <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
-        {displayedProjects.map((project, index) => (
-          <Card
-            key={index}
-            className="group bg-zinc-900/40 border-zinc-800/60 hover:border-zinc-700/80 transition-all duration-500 hover:bg-zinc-900/60 overflow-hidden backdrop-blur-sm"
-            onMouseEnter={() => setHoveredProject(index)}
-            onMouseLeave={() => setHoveredProject(null)}
-          >
+    <ProjectsBlueprintOverlay>
+      <section className="space-y-8 mb-8" id="projects">
+        <div className="flex items-center gap-4">
+          <h2 className="text-2xl font-bold text-zinc-100">Projects</h2>
+          <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
+        </div>
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
+          {displayedProjects.map((project, index) => (
+            <CardBlueprintOverlay key={index}>
+              <Card
+                className="group bg-zinc-900/40 border-zinc-800/60 hover:border-zinc-700/80 transition-all duration-500 hover:bg-zinc-900/60 overflow-hidden backdrop-blur-sm"
+                onMouseEnter={() => setHoveredProject(index)}
+                onMouseLeave={() => setHoveredProject(null)}
+              >
             <CardContent className="p-0">
               <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-zinc-800/50 to-zinc-900/50">
                 <Image
@@ -170,6 +172,7 @@ export function Projects() {
               </div>
             </CardContent>
           </Card>
+            </CardBlueprintOverlay>
         ))}
       </div>
 
@@ -190,6 +193,7 @@ export function Projects() {
         </div>
       )}
     </section>
+    </ProjectsBlueprintOverlay>
   );
 }
 
