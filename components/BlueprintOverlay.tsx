@@ -549,3 +549,24 @@ export function CardBlueprintOverlay({
     </BlueprintOverlay>
   );
 }
+
+export function BlueprintSection({ label, className = "", headingClassName = "", tight = false, children }: { label: string; className?: string; headingClassName?: string; tight?: boolean; children: React.ReactNode; }) {
+  const containerClasses = tight ? "w-full max-w-5xl mx-auto px-2 sm:px-4" : "w-full";
+  return (
+    <SectionBlueprintOverlay className={`relative mb-14 ${containerClasses} ${className}`}>
+      <div className="relative z-10">
+        <div className="flex items-center gap-4 mb-6">
+          <h2 className={`text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-100 ${headingClassName}`}>
+            {label}
+          </h2>
+          <div className="h-px bg-gradient-to-r from-violet-400/40 via-zinc-800 to-transparent flex-1" />
+        </div>
+        {children}
+      </div>
+      {/* floating faint label */}
+      <span className="pointer-events-none absolute -top-3 left-4 text-[10px] font-mono tracking-[0.3em] text-white/30">
+        {label.toUpperCase()}
+      </span>
+    </SectionBlueprintOverlay>
+  );
+}

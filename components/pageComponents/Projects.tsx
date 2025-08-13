@@ -27,7 +27,7 @@ export function Projects() {
 
   return (
     <ProjectsBlueprintOverlay>
-      <section className="space-y-8 mb-8" id="projects">
+      <section className="space-y-8 mb-8 max-w-6xl mx-auto px-2 sm:px-4" id="projects">
         <div className="flex items-center gap-4">
           <h2 className="text-2xl font-bold text-zinc-100">Projects</h2>
           <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Tooltip from "@/components/Tooltip";
-import { SectionBlueprintOverlay } from "../BlueprintOverlay";
+import { BlueprintSection } from "../BlueprintOverlay";
 
 const skills = [
   { name: "TypeScript", logo: "/logos/typescript.svg" },
@@ -30,35 +30,28 @@ export function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
-    <SectionBlueprintOverlay>
-      <section className="space-y-6 mb-8">
-        <div className="flex items-center gap-4">
-          <h2 className="text-2xl font-bold text-zinc-100">Skills & Tools</h2>
-          <div className="h-px bg-gradient-to-r from-zinc-700 via-zinc-800 to-transparent flex-1" />
-        </div>
-
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="group relative"
-              onMouseEnter={() => setHoveredSkill(skill.name)}
-              onMouseLeave={() => setHoveredSkill(null)}
-            >
-              <Tooltip content={skill.name}>
-                <div className="flex items-center justify-center p-2 bg-transparent  rounded-lg transition-all duration-200 cursor-pointer group-hover:scale-105">
-                  <img
-                    src={skill.logo}
-                    alt={skill.name}
-                    className="w-10 h-10 invert"
-                  />
-                </div>
-              </Tooltip>
-            </div>
-          ))}
-        </div>
-      </section>
-    </SectionBlueprintOverlay>
+    <BlueprintSection label="Skills & Tools">
+      <div className="flex flex-wrap gap-3">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="group relative"
+            onMouseEnter={() => setHoveredSkill(skill.name)}
+            onMouseLeave={() => setHoveredSkill(null)}
+          >
+            <Tooltip content={skill.name}>
+              <div className="flex items-center justify-center p-2 rounded-md border border-dashed border-white/15 bg-zinc-900/40 backdrop-blur-sm transition-all duration-200 cursor-pointer group-hover:border-violet-300/40 group-hover:scale-105">
+                <img
+                  src={skill.logo}
+                  alt={skill.name}
+                  className="w-10 h-10 invert"
+                />
+              </div>
+            </Tooltip>
+          </div>
+        ))}
+      </div>
+    </BlueprintSection>
   );
 }
 
